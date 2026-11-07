@@ -1,0 +1,12 @@
+@font-face { font-family: 'Brand Inter'; src: url('fonts/inter-latin-400-normal.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: 'Brand Inter'; src: url('fonts/inter-latin-700-normal.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: block; }
+@font-face { font-family: 'Brand Inter'; src: url('fonts/inter-latin-800-normal.woff2') format('woff2'); font-weight: 800; font-style: normal; font-display: block; }
+:root { --brand-ink:#142B5B; --brand-accent:#F3A46B; --brand-paper:#F7F6F2; }
+.brand { font-family:'Brand Inter',sans-serif; color:var(--brand-paper); }
+.brand-hook { font-family:'Brand Inter',sans-serif; font-weight:800; line-height:1.08; letter-spacing:-.025em; }
+.brand-body { font-family:'Brand Inter',sans-serif; font-weight:400; line-height:1.5; }
+.brand-caption { font-family:'Brand Inter',sans-serif; font-weight:700; line-height:1.18; color:var(--brand-paper); text-shadow:0 2px 8px rgba(0,0,0,.55); }
+.brand-emphasis { color:var(--brand-accent); font-style:normal; font-family:inherit; font-weight:inherit; }
+.brand-highlight { background:var(--brand-accent); color:var(--brand-ink); padding:0 .12em; text-shadow:none; }
+.brand-panel { background:var(--brand-ink); color:var(--brand-paper); }
+.brand-paper { background:var(--brand-paper); color:var(--brand-ink); }

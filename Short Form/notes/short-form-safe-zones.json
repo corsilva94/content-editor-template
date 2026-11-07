@@ -1,0 +1,57 @@
+{
+  "scope": "All short-form edits. Review each target platform separately; these numbers are the Instagram Reels planning default.",
+  "researched_on": "2026-11-06",
+  "canvas": [
+    1080,
+    1920
+  ],
+  "essential_content_rect": {
+    "left": 120,
+    "top": 290,
+    "right": 900,
+    "bottom": 1210
+  },
+  "coordinate_basis": "Source video pixels; scale proportionally for other export sizes. Conservative editorial envelope, not an official universal UI template.",
+  "sources": [
+    {
+      "url": "https://d3m889aznlr23d.cloudfront.net/img/events/458925814/assets/e042d2be.reels_ads_guide1.pdf",
+      "kind": "Meta-authored Reels ads guide hosted on a third-party CDN",
+      "finding": "Page 4: leave bottom 35% free of key elements. Ad guidance, not a guarantee for every organic Reel."
+    },
+    {
+      "url": "https://www.storycut.com/tools/instagram-reels-safe-zone",
+      "kind": "third-party template",
+      "finding": "Reports Meta margins of 14% top, 35% bottom, 6% sides. Meta help URL redirected to login during direct research."
+    },
+    {
+      "url": "https://bannerpeek.com/tools/instagram-reels-safe-zone",
+      "kind": "third-party measured UI template",
+      "finding": "Reports September 2026 screenshot measurements: top200, bottom700, right170. Basis for extra right rail/bottom padding."
+    },
+    {
+      "url": "https://github.com/shortformkit/safe-zone-templates",
+      "kind": "alternative downloadable template",
+      "finding": "Uses looser 220/450/40/140 margins. Not adopted: disagreement illustrates why one PNG is not a universal guarantee."
+    }
+  ],
+  "ui_map": {
+    "top": "Reels title, navigation/camera/status controls; exact layout varies",
+    "right": "Like, comment, share/repost, overflow controls and counts; save can be in overflow or vary with viewing surface. Reserve the entire rail, not fixed icon spots.",
+    "bottom_left": "Avatar, username, follow, description/caption, audio attribution; caption length and expansion vary",
+    "bottom": "Navigation, audio/interaction UI; ads can add a CTA bar"
+  },
+  "mandatory_rules": [
+    "Keep all essential diagram nodes, strokes, arrowheads, labels, burned-in captions, faces and calls to action inside the safe rectangle, including their full entrance/movement bounds. Background and decorative texture may bleed.",
+    "Center the main visual group on both actual frame axes (540,960 at 1080\u00d71920). Titles may be left-aligned above it. Fit or recompose the visual around this center within the safe envelope; never silently substitute the UI-safe rectangle midpoint.",
+    "Use the review overlay before export; never bake it into the delivered video.",
+    "If diagram and speech captions compete, alternate beats or simplify; do not shrink text until unreadable.",
+    "Check at 360px-wide phone size. Body/diagram labels should be at least 33px in the 1080px source; handwritten annotations need at least 38px before any scaling and must pass a phone-size review.",
+    "Review full-screen 9:16 and central 4:5 / 3:4 feed/cover crop stress tests, plus a tall-screen crop. Those are test scenarios, not assertions that every device uses those crops.",
+    "Verify the first real footage pilot in the current Instagram preview before publishing, and re-check when UI changes. Preview with the real description length and any native captions enabled.",
+    "Do not promise all details visible on every possible screen/state. Expanded captions, comments, accessibility settings and app experiments can obscure content beyond any static safe rectangle. Design for normal collapsed playback and test current target surfaces."
+  ],
+  "review_assets": [
+    "exports/short-form-guides/instagram-reels-review-overlay.png",
+    "exports/short-form-guides/instagram-reels-review-overlay.svg"
+  ]
+}

@@ -1,0 +1,31 @@
+<template><style>@font-face{font-family:Inter;src:url('assets/fonts/inter-latin-400-normal.woff2');font-weight:400;font-display:block}@font-face{font-family:Inter;src:url('assets/fonts/inter-latin-700-normal.woff2');font-weight:700;font-display:block}@font-face{font-family:Inter;src:url('assets/fonts/inter-latin-800-normal.woff2');font-weight:800;font-display:block}
+@font-face{font-family:Caveat;src:url('assets/fonts/caveat-variable.ttf');font-weight:400 700;font-display:block}
+#root{position:absolute;inset:0;color:#142B5B;font-family:Inter,sans-serif;--ink:#142B5B;--paper:#F7F6F2;--accent:#F3A46B;--problem:#B8453C}
+.clip{position:absolute;inset:0}
+.paper{position:absolute;inset:0;background:#fff}
+.paper:before{content:'';position:absolute;inset:0;background-color:var(--paper);background-image:linear-gradient(rgba(20,43,91,.065) 1px,transparent 1px),linear-gradient(90deg,rgba(20,43,91,.065) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,transparent 8px,#000 80px,#000 calc(100% - 80px),transparent calc(100% - 8px)),linear-gradient(transparent 8px,#000 80px,#000 calc(100% - 80px),transparent calc(100% - 8px));mask-composite:intersect}
+.svg{position:absolute;inset:0;width:1080px;height:1920px}
+.svg text{text-anchor:middle;dominant-baseline:middle;fill:var(--ink);font-size:40px;font-weight:700}
+.outline{stroke:var(--ink);stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.accent{stroke:var(--accent);stroke-width:9;fill:none;stroke-linecap:round}
+.problem{stroke:var(--problem)}
+.svg .hand{font-family:Caveat;font-size:43px;font-weight:600}
+.diagram-stage{position:absolute;inset:0;transform:translateY(-88px)}
+.quote{position:absolute;left:180px;top:660px;width:720px;text-align:center;font-size:40px;font-weight:700;line-height:1.2;color:var(--problem)}
+.caption{position:absolute;left:180px;top:1136px;width:720px;text-align:center;color:#FFFFFF;font-size:58px;line-height:1.17;font-weight:700;letter-spacing:-1px}
+.caption .inner{display:inline-block;max-width:720px;text-shadow:0 2px 4px rgba(0,0,0,.85);-webkit-text-stroke:1.3px rgba(0,0,0,.65);paint-order:stroke fill}
+.caption.paper-cap{color:var(--ink)}
+.caption.paper-cap .inner{text-shadow:none;-webkit-text-stroke:0}
+.caption span.em{color:var(--accent)}
+.caption.paper-cap span.em{color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:7px;text-underline-offset:8px}
+</style><div id="root" data-composition-id="graphics" data-width="1080" data-height="1920">
+<div id="scene-network" class="clip" data-start="4.0" data-duration="4.0" data-track-index="1" data-beat="Who depends on you"><div class="paper" data-layout-ignore></div><div class="diagram-stage"><svg class="svg" viewBox="0 0 1080 1920" aria-label="Three people connect to you"><g id="network" data-layout-allow-overlap><g class="outline"><path id="out-0" d="M461.22 937.26 Q404.20 917.68 345.52 903.86 L326.31 898.31"/><path id="out-0h" d="M340.74 895.19 L326.31 898.31 L336.86 908.64"/></g><g id="user-0" transform="translate(280.19 885.0)"><circle class="outline" r="30"/><g transform="scale(1.0)"><circle class="outline" cy="-8" r="6.5"/><path class="outline" d="M-13 12 C-12 0 12 0 13 12"/></g></g><g class="outline"><path id="out-1" d="M618.78 937.26 Q677.46 923.44 734.48 903.86 L753.69 898.31"/><path id="out-1h" d="M743.14 908.64 L753.69 898.31 L739.26 895.19"/></g><g id="user-1" transform="translate(799.81 885.0)"><circle class="outline" r="30"/><g transform="scale(1.0)"><circle class="outline" cy="-8" r="6.5"/><path class="outline" d="M-13 12 C-12 0 12 0 13 12"/></g></g><g class="outline"><path id="out-2" d="M540.00 1042.00 Q537.00 1042.00 540.00 1042.00 L540.00 1062.00"/><path id="out-2h" d="M533.00 1049.00 L540.00 1062.00 L547.00 1049.00"/></g><g id="user-2" transform="translate(540.0 1110.0)"><circle class="outline" r="30"/><g transform="scale(1.0)"><circle class="outline" cy="-8" r="6.5"/><path class="outline" d="M-13 12 C-12 0 12 0 13 12"/></g></g><g id="owner"><circle class="outline" cx="540" cy="960" r="60"/><circle class="outline" cx="540" cy="942" r="10"/><path class="outline" d="M521 969 C521 952 559 952 559 969"/><text x="540" y="1050" style="font-size:36px">You</text></g></g></svg></div></div>
+</div><script>(function(){const tl=gsap.timeline({paused:true});
+function draw(id,t,d=.45){const p=document.querySelector(id);const l=p.getTotalLength();tl.fromTo(p,{opacity:0,strokeDasharray:l,strokeDashoffset:l},{opacity:1,strokeDashoffset:0,duration:d,ease:'power1.inOut',immediateRender:true},t)}
+function arrow(id,t){draw(id,t,.46);draw(id+'h',t+.42,.12)}
+function show(id,t){tl.fromTo(id,{opacity:0},{opacity:1,duration:.18,immediateRender:true},t)}
+tl.fromTo('#owner',{opacity:0,scale:1.4,svgOrigin:'540 960'},{opacity:1,scale:1,svgOrigin:'540 960',duration:.6,ease:'power2.out',immediateRender:true},4.200);
+show('#user-0',4.900);arrow('#out-0',4.980);
+show('#user-1',5.250);arrow('#out-1',5.330);
+show('#user-2',5.600);arrow('#out-2',5.680);
+window.__timelines=window.__timelines||{};window.__timelines.graphics=tl;})();</script></template>

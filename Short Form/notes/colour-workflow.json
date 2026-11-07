@@ -1,0 +1,52 @@
+{
+  "purpose": "How to judge and validate a grade for a browser-rendered export. Shot-specific numbers never transfer between setups; redo the checks for each new camera, lighting or renderer.",
+  "source_checks": [
+    "Read camera gamma/gamut, matrix and range metadata; confirm S-Log3/S-Gamut3.Cine input",
+    "Inspect original 10-bit source before judging clipped exports",
+    "Inspect available source highlight gradation before the output transform; do not promise missing detail can be recovered. The V3 extra highlight curve was rejected and is not part of the current C baseline."
+  ],
+  "scope_checks": [
+    "Use luma waveform for brightness, highlights and flat clipped plateaus",
+    "Use RGB parade and credible neutral references for channel imbalance, without flattening intentional coloured lighting",
+    "Isolate un-bearded skin patches for vectorscope inspection; treat skin indicator as hue guidance, not an exact target or universal skin brightness",
+    "Inspect early, middle and late shots; verify export primaries, matrix, range, transfer and true peaks against the actual image encoding, then compare a matched preview frame through the intended player."
+  ],
+  "shot_specific": "Do not reuse correction numbers blindly across new lighting/camera setups",
+  "export_validation": {
+    "principle": "Do not approve colour from ffprobe tags or FFmpeg pixel decoding alone. Compare the exact preview and exported frame through a colour-managed playback path.",
+    "workflow_specific": "HyperFrames 0.9.19 browser capture in this project produces sRGB-coded RGB. Tested Apple AVFoundation/CoreGraphics playback matches that preview substantially better with transfer 13 in BOTH H.264 VUI and MP4 container. Keep BT709 primaries/matrix and limited YUV range.",
+    "not_universal": "Do not reinterpret camera originals or arbitrary Rec709 masters as sRGB. Revalidate whenever renderer, encoding, source pipeline or target platform changes.",
+    "lossless_intermediate": "Use --video-frame-format png for the delivery render."
+  },
+  "how_to_apply_a_grade": "Create a HyperFrames media-treatment payload (npx hyperframes media-treatment --help) and save it as work/<video>/color/selected-payload.json; npm run build applies it to #footage.",
+  "sources": [
+    {
+      "title": "Sony S-Gamut3.Cine/S-Log3 technical summary",
+      "url": "https://pro.sony/s3/cms-static-content/uploadfile/06/1237494271406.pdf"
+    },
+    {
+      "title": "Apple waveform and RGB parade",
+      "url": "https://support.apple.com/en-az/guide/final-cut-pro/ver761c9d9d/12.4/mac/26.6"
+    },
+    {
+      "title": "Apple vectorscope",
+      "url": "https://support.apple.com/en-mt/guide/final-cut-pro/ver761c9f95/mac"
+    },
+    {
+      "title": "Blackmagic Colorist Guide: skin tone indicator is not a strict target",
+      "url": "https://documents.blackmagicdesign.com/UserManuals/DaVinci-Resolve-17-Colorist-Guide.pdf?_v=1623808249000"
+    },
+    {
+      "title": "Apple QuickTime colour parameter atom",
+      "url": "https://developer.apple.com/documentation/quicktime-file-format/color_parameter_atom"
+    },
+    {
+      "title": "Apple CoreVideo transfer-function constants",
+      "url": "https://developer.apple.com/documentation/corevideo/image-buffer-transfer-function-constants"
+    },
+    {
+      "title": "FFmpeg H.264 metadata bitstream filter",
+      "url": "https://ffmpeg.org/ffmpeg-bitstream-filters.html#h264_005fmetadata"
+    }
+  ]
+}

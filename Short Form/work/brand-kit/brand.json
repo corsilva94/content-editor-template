@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "creator_name": "Your Name",
+  "status": "template defaults; replace the palette and name with your own brand",
+  "palette": {
+    "ink": "#142B5B",
+    "paper": "#F7F6F2",
+    "accent": "#F3A46B",
+    "footage_text": "#FFFFFF",
+    "problem": "#B8453C"
+  },
+  "typography": {
+    "family": "Inter",
+    "hook_weight": 800,
+    "caption_weight": 700,
+    "body_weight": 400,
+    "note": "Inter is bundled under the SIL Open Font License. To use another family, add its font files to brand-kit/fonts and starter/composition/assets/fonts, then update build.py's @font-face block."
+  },
+  "captions": {
+    "font_size": 58,
+    "x": 180,
+    "y": 1136,
+    "width": 720,
+    "max_line_width": 700,
+    "min_duration": 0.3,
+    "tail": 0.1,
+    "style": "Text only. White over footage with a thin dark glyph edge; ink colour over paper with no edge. One position and size in every scene. Each caption ends at punctuation; the next word starts a new caption. No rotation, bounce or background panel."
+  },
+  "camera": {
+    "rule": "Anchor every crop to one stable base-of-neck point, centred horizontally, and only change scale between cuts. Never follow eyes, head or hands, and never re-centre at pause trims. Pick a fresh anchor when the camera setup changes.",
+    "punch_range": [1.2, 1.25],
+    "file": "work/<video>/camera-plan.json"
+  },
+  "motion": {
+    "cuts": "straight cuts or simple fades",
+    "effects": "none by default: no neon, glow, shake or heavy grade",
+    "diagrams": "draw strokes in over 0.4 to 0.5 s; reveal nodes with short fades; keep every connector clear of text and objects"
+  },
+  "diagrams": {
+    "style": "Paper background with a 48px micro-grid, unfilled outlines, uniform 4px stroke, slightly irregular arrows with straight arrowheads, labels at least 33px on the 1080px canvas.",
+    "rules": "notes/paper-grid-format.json"
+  },
+  "safe_zones": "notes/short-form-safe-zones.json",
+  "brain_sources": {
+    "voice": "content-brain/06-voice/voice.md",
+    "identity": "content-brain/01-identity/identity.md"
+  }
+}

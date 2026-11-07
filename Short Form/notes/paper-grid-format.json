@@ -1,0 +1,34 @@
+{
+  "format": "Warm paper with subtle creative grid, animated Inter text and drawn diagrams on one continuous page",
+  "diagram_rules": [
+    "Never route connector lines or arrowheads through, behind or across text, boxes or unrelated objects.",
+    "End connectors outside their target border with visible clearance (24px minimum at 1080px wide); keep arrowheads fully visible.",
+    "Use distinct connection ports; avoid connector crossings.",
+    "Hide old connectors before moving nodes; redraw only after nodes settle. Check transitions as well as resting frames.",
+    "If a route is crowded, reposition nodes or simplify the diagram; never hide the problem with layering."
+  ],
+  "drawing_style": {
+    "geometry": "Precise circles and rectangles for structural nodes; subtle human variation reserved for arrows and annotation strokes.",
+    "shapes": "Geometrically regular, unfilled outlines with consistent stroke weight; simple entrance, no hand wobble.",
+    "arrows": "Separate shaft and head; align head to terminal tangent; short straight approach; asymmetric wing length allowed; both wings remain on opposite sides of shaft; never cross shaft except at tip",
+    "review": "Inspect arrowheads at full resolution, phone size, during reveal and after nodes move; automated layout passing is insufficient"
+  },
+  "grid": {
+    "cell_px": 48,
+    "major_grid": false,
+    "edge_background": "#FFFFFF",
+    "blank_edge_px": 8,
+    "fade_width_px": 72,
+    "fade_cells": 1.5,
+    "texture": "uniform micro grid with no emphasized subdivisions"
+  },
+  "font_experiment": {
+    "family": "Caveat",
+    "weight": 600,
+    "usage": "short handwritten annotations only; Inter remains the main typeface",
+    "source": "https://github.com/google/fonts/tree/main/ofl/caveat"
+  },
+  "status": "reusable diagram format; prototype in work/paper-grid",
+  "palette_source": "work/brand-kit/brand.json",
+  "audio": "diagrams are cutaways synchronised to the creator's real narration; never a synthesized voice"
+}

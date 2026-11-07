@@ -1,0 +1,32 @@
+.DS_Store
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.hyperframes/
+.downloads/
+.env
+.env.*
+!.env.example
+**/private/
+*.pem
+*.key
+*.p12
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.zip
+*.log
+**/segments/
+**/inbox/*
+!**/inbox/README.md
+
+**/export-info.json
+
+**/.*hf-transaction*/
+
+# local MCP config (tokens)
+.mcp.json
+# transcripts can hold full speech; keep them local unless you choose to commit

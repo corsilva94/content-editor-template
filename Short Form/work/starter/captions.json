@@ -1,0 +1,168 @@
+[
+  {
+    "text": "This is the hook,",
+    "start": 0.0,
+    "end": 1.2000000000000002,
+    "words": [
+      {
+        "text": "This",
+        "start": 0.0,
+        "end": 0.25,
+        "cut": "hook"
+      },
+      {
+        "text": "is",
+        "start": 0.25,
+        "end": 0.4,
+        "cut": "hook"
+      },
+      {
+        "text": "the",
+        "start": 0.4,
+        "end": 0.55,
+        "cut": "hook"
+      },
+      {
+        "text": "hook,",
+        "start": 0.55,
+        "end": 1.1,
+        "cut": "hook"
+      }
+    ],
+    "cut": "hook"
+  },
+  {
+    "text": "said straight to camera.",
+    "start": 1.3,
+    "end": 2.7,
+    "words": [
+      {
+        "text": "said",
+        "start": 1.3,
+        "end": 1.55,
+        "cut": "hook"
+      },
+      {
+        "text": "straight",
+        "start": 1.55,
+        "end": 1.95,
+        "cut": "hook"
+      },
+      {
+        "text": "to",
+        "start": 1.95,
+        "end": 2.05,
+        "cut": "hook"
+      },
+      {
+        "text": "camera.",
+        "start": 2.05,
+        "end": 2.6,
+        "cut": "hook"
+      }
+    ],
+    "cut": "hook"
+  },
+  {
+    "text": "Keep it short.",
+    "start": 2.9,
+    "end": 3.9,
+    "words": [
+      {
+        "text": "Keep",
+        "start": 2.9,
+        "end": 3.15,
+        "cut": "hook"
+      },
+      {
+        "text": "it",
+        "start": 3.15,
+        "end": 3.3,
+        "cut": "hook"
+      },
+      {
+        "text": "short.",
+        "start": 3.3,
+        "end": 3.8,
+        "cut": "hook"
+      }
+    ],
+    "cut": "hook"
+  },
+  {
+    "text": "Then the main point lands on paper,",
+    "start": 4.1,
+    "end": 6.3,
+    "words": [
+      {
+        "text": "Then",
+        "start": 4.1,
+        "end": 4.35,
+        "cut": "point"
+      },
+      {
+        "text": "the",
+        "start": 4.35,
+        "end": 4.5,
+        "cut": "point"
+      },
+      {
+        "text": "main",
+        "start": 4.5,
+        "end": 4.8,
+        "cut": "point"
+      },
+      {
+        "text": "point",
+        "start": 4.8,
+        "end": 5.2,
+        "cut": "point"
+      },
+      {
+        "text": "lands",
+        "start": 5.2,
+        "end": 5.55,
+        "cut": "point"
+      },
+      {
+        "text": "on",
+        "start": 5.55,
+        "end": 5.7,
+        "cut": "point"
+      },
+      {
+        "text": "paper,",
+        "start": 5.7,
+        "end": 6.2,
+        "cut": "point"
+      }
+    ],
+    "cut": "point"
+  },
+  {
+    "text": "with a diagram.",
+    "start": 6.4,
+    "end": 7.3999999999999995,
+    "words": [
+      {
+        "text": "with",
+        "start": 6.4,
+        "end": 6.6,
+        "cut": "point"
+      },
+      {
+        "text": "a",
+        "start": 6.6,
+        "end": 6.7,
+        "cut": "point"
+      },
+      {
+        "text": "diagram.",
+        "start": 6.7,
+        "end": 7.3,
+        "cut": "point"
+      }
+    ],
+    "cut": "point"
+  }
+]

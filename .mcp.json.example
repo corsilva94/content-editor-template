@@ -1,0 +1,16 @@
+{
+  "_comment": "Optional MCP servers. Copy to .mcp.json on your own machine (gitignored) or register at user scope with `claude mcp add`. Never commit a token.",
+  "mcpServers": {
+    "edits": {
+      "type": "http",
+      "url": "http://127.0.0.1:19501/mcp",
+      "headers": {
+        "Authorization": "Bearer PASTE_THE_TOKEN_FROM_EDITS_SETTINGS"
+      }
+    },
+    "topicfinder": {
+      "type": "http",
+      "url": "https://app.topicfinder.ai/mcp"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "job": "Short Form",
+  "video": "starter",
+  "composition": "composition",
+  "port": 3002,
+  "render": {
+    "fps": "24000/1001",
+    "quality": "delivery",
+    "workers": 2,
+    "srgb_transfer_fix": true
+  },
+  "notes": "job: the folder that holds one creator's work. video: the folder under <job>/work that the npm commands build, preview and render. Switch videos with `npm run use -- <video>` or edit this file."
+}

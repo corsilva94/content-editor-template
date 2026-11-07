@@ -1,0 +1,29 @@
+{
+  "name": "content-editor-template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "setup": "node scripts/editor.mjs setup",
+    "doctor": "node scripts/editor.mjs doctor",
+    "download:media": "node scripts/editor.mjs download",
+    "new": "node scripts/new-video.mjs",
+    "use": "node scripts/editor.mjs use",
+    "transcribe": "node scripts/editor.mjs transcribe",
+    "build": "node scripts/editor.mjs build",
+    "preview": "node scripts/editor.mjs preview",
+    "check": "node scripts/editor.mjs check",
+    "snapshot": "node scripts/editor.mjs snapshot",
+    "render": "node scripts/editor.mjs render"
+  },
+  "dependencies": {
+    "hyperframes": "0.9.19",
+    "gsap": "3.15.1"
+  },
+  "overrides": {
+    "undici": "7.30.1"
+  }
+}

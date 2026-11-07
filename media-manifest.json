@@ -1,0 +1,8 @@
+{
+  "notes": "Optional. Leave files empty and drop your own clips into the composition's assets/media folder. To share prepared media with collaborators, publish a zip as a GitHub release on your copy of this repo and fill in repository, release, asset, sha256 and files; npm run download:media then fetches and verifies it.",
+  "repository": "",
+  "release": "",
+  "asset": "",
+  "sha256": "",
+  "files": []
+}

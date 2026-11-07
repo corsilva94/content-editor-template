@@ -1,0 +1,12 @@
+{
+  "method": "One stable base-of-neck point in the source clip (source_anchor, in source pixels) is pinned to one screen point (screen_anchor, on the 1080x1920 canvas) at every cut. Only scale changes. build.py turns each cut's scale into the x/y transform, so identical scales always give identical crops. No eye, head or hand following; no re-centring at pause trims.",
+  "source_anchor": [540, 820],
+  "screen_anchor": [540, 820],
+  "base_scale": 1.0,
+  "punch_range": [1.2, 1.25],
+  "cuts": [
+    {"time": 0.0, "scale": 1.0, "note": "wide, hook"},
+    {"time": 4.0, "scale": 1.2, "note": "punch in for the point"}
+  ],
+  "how_to_find_the_anchor": "Open a frame of your clip at source resolution, note the pixel where the collar meets the base of the neck, and put it in source_anchor. screen_anchor is where that point should sit on the finished frame; 540,820 keeps the eyes near the upper third for a seated talking head. Save the reference frame as qa/neck-reference.jpg so the next edit uses the same point."
+}
